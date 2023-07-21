@@ -30,6 +30,7 @@ function ExpensesOverview(){
           tabBarIcon: ({color, size}) => <Ionicons name='hourglass' size={size} color={color}/>
         }}
       />
+      
       <BottomTabs.Screen 
         name='AllExpenses' 
         component={AllExpenses}
@@ -39,6 +40,7 @@ function ExpensesOverview(){
           tabBarIcon: ({color, size}) => <Ionicons name='calendar' size={size} color={color}/>
         }}
       />
+      
     </BottomTabs.Navigator>
   )
 }
