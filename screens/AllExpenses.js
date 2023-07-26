@@ -1,4 +1,4 @@
-import ExpensesOutput from "../constansts/ExpensesOutput/ExpensesOutput";
+import ExpensesOutput from "../components/ExpensesOutput/ExpensesOutput";
 
 function AllExpenses(){
     return <ExpensesOutput expensesPeriod='Total'/>
