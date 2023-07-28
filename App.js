@@ -13,20 +13,24 @@ import IconButton from './components/UI/IconButton';
 const Stack = createNativeStackNavigator();
 const BottomTabs = createBottomTabNavigator();
 
-function fn() {
-
-}
-
 function ExpensesOverview(){
   return(
     <BottomTabs.Navigator 
-      screenOptions={{
+      screenOptions={ ({ navigation }) => ({
         headerStyle:{backgroundColor: GlobalStyles.color.primary500},
         headerTintColor: 'white',
         tabBarStyle: {backgroundColor: GlobalStyles.color.primary500},
         tabBarActiveTintColor: GlobalStyles.color.accent500,
-        headerRight:({tintColor}) => <IconButton icon="add" size={24} color={tintColor} onPress={()=>{}}/>
-      }}>
+        headerRight:({tintColor}) => (
+          <IconButton 
+            icon="add" 
+            size={24} 
+            color={tintColor} 
+            onPress={ () => {
+              navigation.navigate('ManageExpense');
+            }}/>
+        )
+      })}>
         <BottomTabs.Screen 
           name='RecentExpenses' 
           component={RecentExpenses}
