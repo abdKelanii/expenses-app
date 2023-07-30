@@ -8,6 +8,7 @@ const DUMMY_EXPENSES = [
         amount: 49.99,
         date: new Date('2022-12-01')
     },
+    
     {
         id: 'e2',
         description: 'T-shirt',
@@ -33,34 +34,40 @@ const DUMMY_EXPENSES = [
         date: new Date('2022-04-12')
     },
     {
-        id: 'e1',
+        id: 'e6',
         description: 'T-shirt',
         amount: 49.99,
         date: new Date('2022-12-01')
     },
     {
-        id: 'e2',
+        id: 'e7',
         description: 'T-shirt',
         amount: 49.99,
         date: new Date('2022-12-01')
     },
     {
-        id: 'e3',
+        id: 'e8',
         description: 'Apples',
         amount: 9.99,
         date: new Date('2022-12-22')
     },
     {
-        id: 'e4',
+        id: 'e9',
         description: 'A book',
         amount: 10,
         date: new Date('2022-02-12')
     },
     {
-        id: 'e5',
+        id: 'e10',
         description: 'A book',
         amount: 10,
         date: new Date('2022-04-12')
+    },
+    {
+        id: 'e11',
+        description: 'T-shirt',
+        amount: 49.99,
+        date: new Date('2023-07-28')
     },
 ]
 
