@@ -21,7 +21,7 @@ import { useNavigation } from "@react-navigation/native"
                     <Text style={styles.textBase}>{getFromattedDate(date)}</Text>
                 </View>
                 <View style={styles.amountContainer}>
-                    <Text style={styles.amount}>{amount}</Text>
+                    <Text style={styles.amount}>$ {amount}</Text>
                 </View>
             </View>
         </Pressable>
