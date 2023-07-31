@@ -5,6 +5,7 @@ import { GlobalStyles } from "../constansts/styles";
 import { ExpensesContext } from "../store/expenses-context";
 import { useContext } from "react";
 import ExpenseForm from "../components/ManageExpense/ExpenseForm";
+import { storeExpense } from "../util/http";
 
 function ManageExpenses({ route, navigation }){
 
@@ -36,6 +37,7 @@ function ManageExpenses({ route, navigation }){
             expensesCtx.updateExpense(editedExpenseId, expenseData);
         } else {
             expensesCtx.addExpense(expenseData);
+            storeExpense(expenseData);
         }
         navigation.goBack();
     }
